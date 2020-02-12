@@ -93,6 +93,8 @@ h2 {
     font-size: 24px;
     margin-bottom: 40px;
     margin-top: 0%;
+    display: flex;
+    justify-content: center;
 }
 
 .hero {
@@ -119,11 +121,7 @@ h2 {
     padding: 20px;
   /* background: red; */
 }
-.portfolio h2{
-    background: white;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
+    
 }
 .project{
   /* border-top: 10px solid red;
