@@ -122,7 +122,6 @@ h2 {
   /* background: red; */
 }
     
-}
 .project{
   /* border-top: 10px solid red;
   border-right: 10px solid green;
@@ -300,7 +299,7 @@ margin-left: 20px
 .contact{
     background-color: #e0bbe4;
     color: white;
-    height: 150px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -629,6 +628,9 @@ h1 {
         text-align: center;
         display: block;
     }
+    .form-email{
+        margin-bottom: 1em;
+    }
     .form-email button{
         margin: 1em auto;
     }
@@ -648,6 +650,9 @@ h1 {
     .promotion-detail{
         margin: -6em .5em .5em;
         padding: 1em;
+      }
+      .promotion-list-title{
+          margin-bottom: -4em;
       }
 }
 
