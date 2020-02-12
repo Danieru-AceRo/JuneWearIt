@@ -116,12 +116,13 @@ h2 {
 }
 
 
-.portfolio{
+.portfolio {
     background: white;
      padding: 20px; 
   /* background: red; */
 }
-
+    
+}
 .project{
   /* border-top: 10px solid red;
   border-right: 10px solid green;
@@ -663,6 +664,7 @@ h1 {
     .header a{
        font-size: 1.2em;
     }
+<<<<<<< HEAD
     .promotion-url{
         font-size: 7px
     }
@@ -670,3 +672,6 @@ h1 {
         padding: .5em;
     }
 }
+=======
+}
+>>>>>>> f8b9a10a4efd3bf72c16f4211a9fcefc07940429
