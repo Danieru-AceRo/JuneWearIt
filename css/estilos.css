@@ -1,26 +1,3 @@
-/* selector de etiqueta header - section - articule - nav */
-    /*body{
-        background: black;
-        color: blue ;
-    }*/
-
-/* selector descendente */
-/* body header nav div a */
-
-/* selector de clase . */
-
-/* .link */
-
-/* selector de id # */
-/* #portafolio */
-
-
-
-/* gris oscuro = #1d252c */
-/* gris claro = #626262 */
-/* background gris = #1b2127 */
-/* celeste = #026fff */
-
 @font-face {
     font-family: 'icomoon';
     src:  url('../fonts/icomoon.eot?qk736l');
@@ -56,7 +33,6 @@
 body{
     font-family: "Source Sans Pro", sans-serif;
     margin: 0%;
-    /* background-color: #d291bc; */
 }
 
 h1,
@@ -78,13 +54,9 @@ h1{
     letter-spacing: -.2px;
     color: white;
     margin: 0px;
-  /* margin: 100px 150px 70px 30px; */
-  /* text-transform: uppercase; */
-  /* text-decoration: dashed; */
+ 
 }
-h1 strong{
-    color:  #f8ca1a;
-}
+
 h2 {
     color: #edb397;
     text-transform: uppercase;
@@ -98,20 +70,6 @@ h2 {
 }
 
 
-.hero {
- height: 300px;
-  /* background-image: url('../images/hero.jpg'); */
-  background-color: #e9c8e2;
-  /* background-size: 500px 300px; */
-  /* background-repeat: no-repeat; */
-  /* background-position-x: right; */
- display: flex;
- align-items: center;
- justify-content: space-between;
- flex-wrap: wrap;
-
-}
-
 .hero-image{
     object-fit: cover;
     flex-wrap: wrap;
@@ -123,71 +81,9 @@ h2 {
     padding: 0 20px;
     flex-wrap: wrap;
 }
-.portfolio {
-    background: white;
-     padding: 20px; 
-  /* background: red; */
-}
+
     
-.project{
-  /* border-top: 10px solid red;
-  border-right: 10px solid green;
-  border-left: 10px solid orange;
-  border-bottom: 10px solid pink; */
-  /* color: blue; */
-  /* border-top-color: red;
-  border-top-width: 15px;
-  border-top-style: solid; */
-    border:1px solid gray;
-    border-radius: 10px;
-/* border-top-left-radius: 50px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px; */
-  /* margin: 10px; */
-    margin-bottom: 15px;
-  /* margin-right
-  margin-left 
-  margin-top */
-    padding: 20px;
-    background: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap
-}
-.project-course,
-.project-date,
-.project-url{
-margin: 10px 0;
-}
-.project-description{
-    font-size: 20px;
-}
-.project strong{
-    font-family: "Fjalla One", sans-serif;
-}
-/* .project-date {
-  margin: 10px 0;
-} */
 
-.project-title {
-    font-size: 30px;
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-
-.project-details {
- width: 50%;
-}
-
-.project-imageContainer {
- width: 50%;
-}
-.project-imageContainer img{
-    max-width: 100%;
-}
 .header{
     background-color: white;
     color: white;
@@ -237,21 +133,6 @@ figure {
     height: inherit;
 }
 
-.flexbox {
-display: flex;
-/* flex-wrap: nowrap; */
-flex-wrap: wrap;
-/* flex-direction: column; */
-}
-
-.box {
-width: 50px;
-height: 50px;
-margin: 5px;
-border: 1px solid red;
-
-flex-shrink: 0
-}
 
 .footer{
  color: white;
@@ -302,7 +183,7 @@ margin-left: 20px
 }
 
 .event-url{
-    color: #056fff;
+    color: yellowgreen;
     border: 1px solid ;
     padding: 5px 20px;
     text-decoration: none;
@@ -344,29 +225,6 @@ margin-left: 20px
 }
 
 
-
-.form-email input{
-    border-color: gray;
-    border-style: solid;
-    border-radius: 5px;
-    padding: 10px 20px 10px 25px;
-    background-image: url("../images/envelope.svg");
-    background-size: 15px 15px;
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: 5px;
-}
-
-.form-email button{
-    display: block;
-    background: transparent;
-    color: black;
-    padding: 10px 0;
-    border-radius: 5px;
-    width: 100px;
-    margin-top: 10px;
-}
-
 .form-email h3{
     font-family: "Source Sans Pro", sans-serif;
 }
@@ -402,13 +260,6 @@ font-size: 20px;
    z-index: 3;
 }
 
-.project-description button
-{
-    display: flex;
-    background-color: #f8ca1a;
-    margin-left: 75px
-    
-}
 
 .event-title a{
     color: black;
@@ -452,9 +303,6 @@ font-size: 35px;
 .promotion-descrption{
     text-align: center;
 }
-.precio-producto{
-    text-decoration: line-through;
-}
 
 
 .promotion-url{
@@ -469,9 +317,6 @@ font-size: 35px;
 }
 .promotion h3{
     margin: .5em;
-}
-.precio-producto{
-    color: #808080;
 }
 
 .container-stock{
@@ -506,18 +351,11 @@ font-size: 35px;
 .event-list-title{
     margin-left: 0;
 }    
-.portfolio{
-    padding: 0;
-}
+
 .container {
     padding: 0 1em;
 }
-.hero{
-    height: auto;
-    position: relative;
-    overflow: hidden;
-    padding: 2em;
-}
+
 .principal-image{
     padding: 30px;
 }
@@ -591,36 +429,6 @@ h1 {
     .menu.is-active{
         left: 0;
     }
-    .project{
-        display: block;
-    }
-    .project-imageContainer {
-        width: auto;
-        text-align: center;
-    }
-    .project-details{
-        width: auto;
-        /* font-size: 10px; */
-    }
-    .project-title{
-        font-size: 1.5em;
-        margin-bottom: .3;
-    }
-    .project-url{
-        font-size: 1em;
-        margin: .3em 0;
-    }
-    .project-course{
-        font-size: 1.2em;
-        margin: .3em 0;
-    }
-    .project-date{
-        font-size: 1em;
-        margin: .3em 0;
-    }
-    .project-description{
-        font-size: 1em
-    }
     .event{
         width: auto;
         flex-shrink: initial;
@@ -645,9 +453,6 @@ h1 {
     h1{
         font-size: 1.5em;
     }
-    .project-details{
-        font-size: 14px;
-    } 
      .event-detail{
       margin: -2em .5em .5em;
       padding: 1em;
@@ -660,9 +465,6 @@ h1 {
     }
     .form-email{
         margin-bottom: 1em;
-    }
-    .form-email button{
-        margin: 1em auto;
     }
     .form-email h3{
         margin-top: 0;
@@ -702,14 +504,8 @@ h1 {
     h1{
         font-size: 1.2;
         } 
-    .hero{
-        padding: 2em 1em;
-    }  
     .logo img
     {height: 60px;
-    }
-    .header a{
-       font-size: 1.2em;
     }
     .promotion-url{
         font-size: 7px
