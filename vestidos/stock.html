@@ -9,22 +9,42 @@
     <title>June Wear It</title>
 </head>
 <body>
+  <i class="icon-menu burger-button" id="burger-menu"></i>
     <header class="header">
-      <div class="container">
-        <figure  class="logo">
-          <a href="../index.html"><img  src="images/isotipo.png" height="75" alt="Logo de http://juneWeirIt.com" /></a>
-        </figure> 
-        </div>
+      <div class="container-logo">
+        <figure class="logo">
+          <img src="images/junelogo.jpg" height="90" alt="Logo de http://juneWeirIt.com" />
+        </figure>
+      </div>
     </header>
-    <section class="hero">
-     <div class="container">
-      <h1 class="hero-text">
-       <strong> June Wear it.</strong> Renta de vestidos en Toluca.Con entrega a todo México
-      </h1>
-     </div>
-    </section>
     <div class="container">
-      <h2 class="event-list-title">Stock</h2>
+    <div class="nav-bar">
+    <nav class="menu">
+        <ol>
+            <li>
+            <a class="link" href="">INICIO</a>
+          </li>
+          <li>
+            <a class="link" href="vestidos/stock.html">RENTA</a>
+          </li>
+          <li>
+            <a class="link" href="#Producto">VENTA</a>
+          </li>
+          <li>
+            <a class="link" href="#JuneGirls">CONOCENOS</a>
+          </li>
+          <li>
+            <a class="link" href="#contactanos">Pasos para rentar</a>
+          </li>
+          <li>
+            <a class="link" href="#contactanos">CONTACTO</a>
+            </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+    <div class="container">
+      <h2 class="event-list-title">Renta</h2>
     </div>
 <section id="Evento"class="event-list">
   <div class="container-stock">
@@ -207,27 +227,60 @@
    </article>
   </div>
  </section>
-    <section id="contactanos" class="contact">
-            <div class="container">
-             <form action="/suscripcion/" class="form-email">
-                <h3>Contactanos</h3>
-               <input type="text" placeholder="Dejame tu email" id="email">
-               <button>Enviar</button>
-             </form>
-             <div class="social">
-             <a href="https://web.facebook.com/pg/June-Renta-de-Vestidos-2187911771266217/photos/?ref=page_internal" class="social-link facebook"></a>
-             <a href="https://www.instagram.com/june_rentadevestidos/?hl=es-la" class="social-link instagram"></a>  
-             </div>
-            </div>
-           </section>
-           <footer class="footer">
-             <div class="container">
-               <div>
-                 <p>
-                   Designed  by  <a href="https://www.instagram.com/rodriguezdanielacevedo/">Daniel Acevedo</a>
-                 </p>
-               </div>
-             </div>
-           </footer>
+ <section id="contactanos" class="contact">
+  <div class="container">
+   <form action="/suscripcion/" class="form-email">
+     <h3>CONTÁCTANOS</h3>
+     <!-- <input type="text" placeholder="Dejame tu email" id="email">
+     <button>Enviar</button> -->
+     <h4>TOLUCA, METEPEC</h4>
+    <p><strong>Citas:</strong> 7222641475 <br>
+     <strong>Horario de atencion:</strong> <br>
+     Lunes-Jueves: 09:00 Hrs.- 19:30 Hrs.<br>
+     Viernes.: 09:00 Hrs.- 19:00 Hrs.<br>
+     Sabados: 9:00 Hrs. - 13:00 Hrs.</p> 
+   </form>
+   <div class="social">
+     <h3>SÍGUENOS</h3>
+   <a href="https://web.facebook.com/pg/June-Renta-de-Vestidos-2187911771266217/photos/?ref=page_internal" class="social-link facebook"></a>
+   <a href="https://www.instagram.com/june_rentadevestidos/?hl=es-la" class="social-link instagram"></a>  
+   </div>
+  </div>
+ </section>
+ <footer class="footer">
+   <div class="container">
+     <div>
+       <p>
+         Designed  by  <a href="https://www.instagram.com/rodriguezdanielacevedo/">Daniel Acevedo</a>
+       </p>
+     </div>
+   </div>
+ </footer>
+ <script>
+   const IPad = window.matchMedia("screen and (max-width: 767px)")
+   const menu = document.querySelector(".menu");
+   // console.log(menu);
+   const burguerButton = document.querySelector("#burger-menu");
+   // console.log(burguerButton);
+
+   IPad.addListener(validation)
+
+   function validation(event) {
+     if (event.matches) { 
+       burguerButton.addEventListener("click", hideShow)
+     } else {
+       burguerButton.removeEventListener("click", hideShow)
+     }
+   }
+   validation(IPad);
+   
+   function hideShow() {
+     if (menu.classList.contains("is-active")) {
+       menu.classList.remove("is-active");
+     } else{
+       menu.classList.add("is-active");
+     }
+   }
+ </script>
 </body>
 </html>

@@ -90,12 +90,13 @@ h2 {
     text-transform: uppercase;
     font-family:"Source Sans Pro", sans-serif;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 38px;
     margin-bottom: 40px;
     margin-top: 0%;
     display: flex;
     justify-content: center;
 }
+
 
 .hero {
  height: 300px;
@@ -113,9 +114,15 @@ h2 {
 
 .hero-image{
     object-fit: cover;
+    flex-wrap: wrap;
 }
-
-
+.principal-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
 .portfolio {
     background: white;
      padding: 20px; 
@@ -182,13 +189,15 @@ margin: 10px 0;
     max-width: 100%;
 }
 .header{
-    background-color: mediumvioletred;
+    background-color: white;
     color: white;
     display: flex;
     height: 70px;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    padding: 16px 0 40px 0;
+    border-bottom: #e5e5e5 solid 1px;
 }
 
 ol,
@@ -201,28 +210,31 @@ ul {
 figure {
     margin: 0;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
-.header a{
-    color:black;
+.nav-bar a{
+    color:#b947a1;
     text-decoration: none;  
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 26px 30px 19px;
+    font-size: 19px;
+    font-weight: 100;
 }
 .menu {
     height: inherit;
 }
-.header ol {
+.nav-bar ol {
     display: flex;
     height: inherit;
+    justify-content: center;
 }
-.header ol li{
+.nav-bar ol li{
     height: inherit;
-}
-.header a {
-    display: flex;
-    align-items: center;
-    height: inherit;
-    padding: 0 10px;
 }
 
 .flexbox {
@@ -243,7 +255,7 @@ flex-shrink: 0
 
 .footer{
  color: white;
- background-color: #957dad;
+ background-color: #e0bbe4;
  display: flex;
  align-items: center;
  justify-content: space-between;
@@ -299,14 +311,22 @@ margin-left: 20px
 .contact{
     background-color: #e0bbe4;
     color: white;
-    height: 200px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-
+.social{
+    height: 100%;
+}
+.social h3{
+    font-size: 20px;
+    font-weight: normal;
+    font-family: inherit;
+    margin-top: auto;
+}
 .social-link{
     display: inline-block;
     width: 50px;
@@ -351,6 +371,13 @@ margin-left: 20px
     font-family: "Source Sans Pro", sans-serif;
 }
 
+.form-email h4{
+font-size: 20px;
+}
+
+.form-email p{
+    font-size: 18px;
+}
 .container{
      /* border: 1px solid red; */
     max-width: 1000px;
@@ -367,9 +394,8 @@ margin-left: 20px
    max-width: 1000px;
    flex: 1;
    margin: 0 auto;
-   margin-left: .1em;
    display: inherit;
-   justify-content: inherit;
+   justify-content: center;
    align-items: inherit;
    height: inherit;
    flex-wrap: inherit;
@@ -401,6 +427,7 @@ margin-left: 20px
 }
  .promotion-list-title{
 margin-bottom: 0;
+font-size: 35px;
 } 
 .promotion {
   margin: 1%;
@@ -433,7 +460,7 @@ margin-bottom: 0;
 .promotion-url{
     color: lightpink;
     border: 1px solid ;
-    padding: 5px 20px;
+    padding: 5px 5px;
     text-decoration: none;
     border-radius: 5px;
 }
@@ -473,6 +500,8 @@ margin-bottom: 0;
     top: 5px;
     color: white;
 }
+
+
 @media screen and (max-width: 1023px) {
 .event-list-title{
     margin-left: 0;
@@ -489,14 +518,12 @@ margin-bottom: 0;
     overflow: hidden;
     padding: 2em;
 }
+.principal-image{
+    padding: 30px;
+}
 .hero-image {
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 100%;
+   height:auto ;
+   max-width: 100%;
 }
 h1 {
     font-size: 2em;
@@ -504,9 +531,11 @@ h1 {
 }
 .promotion-list-title{
     margin-left: 0;
+    font-size: 30px;
 }    
 .promotion-detail{
     margin: 0%;
+    margin-top: -80px
 }
 .promotion-url{
     font-size: 13px;
@@ -519,7 +548,6 @@ h1 {
 
 @media screen and (max-width: 767px) {
     h2{
-        font-size: 1.2em;
         margin: 0;
         margin-bottom: .3em;
     }
@@ -530,17 +558,17 @@ h1 {
         display: block;
        height: auto;
         }   
-    .header ol {
+    .nav-bar ol {
         display: block;
     }
-    .header ol li{
+    .nav-bar ol li{
         height: 50px;
     }
-    .header a{
+    .nav-bar a{
         justify-content: center;
         height: 40px;
         font-size: 1.5em;
-        text-decoration: underline;
+        text-decoration: none;
         margin-bottom: .5em;
 
     }
@@ -607,8 +635,10 @@ h1 {
     .promotion img{
         width: 100%;
     }
+    
     .promotion-detail{
-        padding: 10px
+        padding: 10px;
+        margin-top: -30px;
     }
 }
 @media screen and (max-width: 480px) {
@@ -649,11 +679,23 @@ h1 {
     }
     .promotion-detail{
         margin: -6em .5em .5em;
-        padding: 1em;
       }
       .promotion-list-title{
-          margin-bottom: -4em;
+          margin-bottom: 0;
+          font-size: 26px;
       }
+      .promotion img{
+          margin-top: -100px;
+      }
+      .header{
+          padding: 10px 0;
+      }
+      .principal-image{
+          padding: 15px;
+      }
+      .nav-bar a{
+        font-size: 1em;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -675,8 +717,8 @@ h1 {
     .promotion-detail{
         padding: .5em;
     }
-<<<<<<< HEAD
+   #june {
+       margin-bottom: -50px;
+   }
+
 }
-=======
-}
->>>>>>> fix-typo
