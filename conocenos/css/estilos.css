@@ -58,7 +58,7 @@ h1{
 }
 
 h2 {
-    color: darkgray;
+    color: #edb397;
     font-family:"Source Sans Pro", sans-serif;
     font-weight: bold;
     font-size: 68px;
@@ -152,34 +152,7 @@ figure {
 .footer a{
     color: white
 }
- .event-list{
-    display: flex;
-    flex-wrap: wrap;
-}
- .event-list-title{
-margin-left: 20px
-}
-
-.event {
-  margin: 1%;
-  width: 31%;
-  flex-shrink: 0;
-  border-radius: 10px;
-  overflow: hidden;
-  background:#fdfdfd;
-}
-.event img {
-    height: auto;
-    object-fit: contain;
-}
-
-.event-url{
-    color: yellowgreen;
-    border: 1px solid ;
-    padding: 5px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-} 
+ 
 .contact{
     background-color: #ffccff;
     color: white;
@@ -253,106 +226,6 @@ margin: auto;
    z-index: 3;
 }
 
-.event-list-title strong {
-font-family: "Allura";
-margin-right: 20px;
-font-size: 80px;
-}
-.event-title a{
-    color: black;
-    text-decoration: none
-}
-
-#june  {
-    height: 400px;
-    object-fit: contain;
-    flex-wrap: wrap;
-}
-
-.promotion-list{
-    display: flex;
-    flex-wrap: wrap;
-}
- .promotion-list-title{
-margin-bottom: 0;
-font-size: 35px;
-font-family: 'Montserrat' ;
-font-weight: 100;
-margin-top: 33px;
-} 
-.promotion {
-  margin: 1%;
-  width: 23%;
-  flex-shrink: 0;
-  border-radius: 10px;
-  overflow: hidden;
-  /* background:ghostwhite; */
-}
-.promotion img {
-    height: 400px;
-    object-fit: contain;
-}
-.promotion-detail{
-    margin: 20px 40px;
-    margin-top: -40px;
-    /* background-color: #f5f5f5; */
-    position: relative;
-    padding: 20px;
-    text-align: center;
-}
-.promotion-descrption{
-    text-align: center;
-}
-
-
-.promotion-url{
-    color: lightpink;
-    border: 1px solid ;
-    padding: 5px 5px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-.promotion p{
-    margin: .5em;
-}
-.promotion h3{
-    margin: .5em;
-}
-.frase p{
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #d5a6bd;
-    font-family: "allura";
-    font-size: 32px;
-    margin-top: 50px;
-    margin-bottom: 0;
-}
-.frase-small p{
-margin:0;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-size: 20px; 
-}
-
-.frase-autor p{
-    margin-top: 10px;
-    text-align: end;
-    margin-right: 26%;
-    font-size: 15px;
-    font-family: 'Architects Daughter';
-    margin-bottom: 50px;
-}
-.container-stock{
-    /* border: 1px solid red; */
-   /* max-width: 1000px; */
-   flex: 1;
-   margin: 0 ;
-   display: inherit;
-   justify-content: inherit;
-   align-items: inherit;
-   height: inherit;
-   flex-wrap: inherit;
-}
 
 .citas p{
 font-size: 23px;
@@ -376,15 +249,70 @@ margin-left: 18px;
     color: white;
 }
 
+.conocenos-description p{
+    font-size: 28px;
+    text-align: justify;
+}
 
+.conocenos-description strong {
+    font-family: "allura";
+    font-weight: 100;
+}
+.container-conocenos{
+    /* border: 1px solid red; */
+   max-width: 1000px;
+   flex: 1;
+   margin: 0 auto;
+   display: flex;
+   justify-content: inherit;
+   align-items: inherit;
+   height: inherit;
+   flex-wrap: inherit;
+   margin-top: 50px;
+   
+}
 
+.conocenos-mision{
+    width: 66%;
+}
+.conocenos-mision p{
+    font-size: 20px;
+    text-align: justify;
+}
+.conocenos-mision h3{
+    color: gray;
+}
+.mision-image{
+    width: 33%;
+    justify-content: flex-end;
+}
+.mision-image2{
+    width: 33%;
+    justify-content: flex-start;
+    margin-bottom: 100px;
+}
+.razones{
+    margin-bottom: 60px;
+}
+.razones h3{
+    color: gray;
+}
+.razones li{
+    font-size: 20px;
+    list-style: disc;
+    text-align: justify;
+}
+.mision-image3{
+    width: 33%;
+    justify-content: flex-start;
+    margin-bottom: 100px;
+    display: none;
+}
 @media screen and (max-width: 1023px) {
-.event-list-title{
-    margin-left: 0;
-}    
+  
 
 .container {
-    padding: 0 1em;
+    padding: 0 3em;
 }
 
 .principal-image{
@@ -398,19 +326,14 @@ h1 {
     font-size: 2em;
     z-index: 2;
 }
-.promotion-list-title{
-    margin-left: 0;
-    font-size: 30px;
-}    
-.promotion-detail{
-    margin: 0%;
-    margin-top: -80px
+.container-conocenos {
+    padding: 0 1em;
 }
-.promotion-url{
-    /* font-size: 13px; */
+.conocenos-mision {
+    margin: 0 15px;
 }
-.promotion{
-    padding: 0;
+.mision-image2{
+    margin-bottom: 10px;
 }
 }
 
@@ -467,42 +390,36 @@ h1 {
         align-items: baseline;
         padding-top: 29px;
     }
-    .event{
-        width: 31%;
-        flex-shrink: initial;
+    .container-conocenos{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     }
-    .event img{
+
+    .conocenos-mision {
+        width: 100%
+    }
+    .mision-image{
         width: 100%;
+        justify-content: center;
     }
-    .promotion{
-        width: 48%;
-        flex-shrink: initial;
-    }
-    .promotion img{
+    .mision-image2{
         width: 100%;
-        height: auto
+        justify-content: center;
+        display: none;
     }
-    
-    .promotion-detail{
-        /* padding: 10px; */
-        margin-top: -30px;
-    }
-    .frase-autor p{
-        text-align: center;
-        margin-right: 0;
+    .mision-image3{
+        margin-bottom: 10px;
+        width: 100%;
+        justify-content: center;
+        display: flex;
     }
 }
 @media screen and (max-width: 480px) {
-    .promotion h3{
-        font-size: 24px;
-    }
     h1{
         font-size: 1.5em;
     }
-     .event-detail{
-      margin: -2em .5em .5em;
-      padding: 1em;
-    }
+
     .contact{
         height: auto;
         padding: 1.5em 0;
@@ -525,43 +442,31 @@ h1 {
         height: 40px;
         background-size: 100%;
     }
-    /* .promotion-detail{
-        margin: -6em .5em .5em;
-      } */
-      .promotion-list-title{
-          margin-bottom: 0;
-          font-size: 26px;
-      }
-      /* .promotion img{
-          margin-top: -100px;
-      } */
-      .header{
+  
+    .header{
           padding: 10px 0;
       }
-      .principal-image{
+     .principal-image{
           padding: 15px;
       }
-      .nav-bar a{
+    .nav-bar a{
         font-size: 1em;
     }
     .logo img{
         height: 90px;
         }
-        .event img{
-            width: 75%
-        }
-        .event{
-            width: 100%;
-        }
-        .citas-container {
-            justify-content: center;
-        }     
-        .event-list-title {
-            font-size: 45px;
-        }
-        .event-list-title strong{
-            font-size: 50px;
-        }
+  .citas-container {
+        justify-content: center;
+        }    
+    .conocenos-title h2{
+        font-size: 48px;
+    } 
+    .conocenos-title img{
+        height: 48px;
+    } 
+    .conocenos-description p{
+        font-size: 20px;
+    }
 }        
 
 @media screen and (max-width: 320px) {
@@ -571,13 +476,10 @@ h1 {
     .logo img
     {height: 60px;
     }
-    .promotion-url{
-        font-size: 7px
-    }
-    .promotion-detail{
-        padding: .5em;
-    }
-   .promotion-detail{
-       margin: 0;
-   }
+    .conocenos-title h2{
+        font-size: 36px;
+    } 
+    .conocenos-title img{
+        height: 36px;
+    } 
 }

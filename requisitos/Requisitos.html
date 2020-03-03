@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>June Wear It | Conócenos</title>
+    <link rel="icon" type="image/png" href="images/Logo.jpg" />
+    <link href="https://fonts.googleapis.com/css?family=Allura&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <meta name="viewport" content="width= device-width, initial-scale= 1">
+  </head>
+  <body>
+      <i class="icon-menu burger-button" id="burger-menu"></i>
+    <header class="header">
+      <div class="container-logo">
+        <figure class="logo">
+          <img src="images/logo.png" height="150" alt="Logo de http://juneWeirIt.com" />
+        </figure>
+      </div>
+    </header>
+    <div class="container">
+    <div class="nav-bar">
+    <nav class="menu">
+        <ol>
+            <li>
+            <a class="link" href="">INICIO</a>
+          </li>
+          <li>
+            <a class="link" href="vestidos/stock.html">RENTA</a>
+          </li>
+          <li>
+            <a class="link" href="#Producto">VENTA</a>
+          </li>
+          <li>
+            <a class="link" href="#JuneGirls">ACCESORIOS</a>
+          </li>
+          <li>
+            <a class="link" href="#contactanos">CONÓCENOS</a>
+          </li>
+          <li>
+            <a class="link" href="#contactanos">CONTACTO</a>
+            </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <section class="requisitos">
+  <div class="container">
+   <h6>¿QUÉ NECESITO PARA RENTAR?</h4>
+   <ol>
+     <li>
+       <p>Hacer cita con anticipación. 
+          </p>
+     </li>
+     <li>
+        <p>Traer una identificación oficial.</p>
+    </li>
+    <li>
+        <p> Garantía de $500 mismos que se regresan cuando devuelves el vestido.</p>
+    </li>
+    <li>
+        <p>Llevar tus tacones en caso de necesitar ajuste de bastilla.</p>
+    </li>
+    <li>
+        <p> Los ajustes de bastilla y cierre de escote corren por nuestra cuenta, siempre y cuando sea con una semana de anticipación.</p>
+    </li>
+    <li>
+        <p> Con $200 puedes apartar tu vestido.</p>
+    </li>
+   </ol>
+  </div>
+</section>
+    
+    
+    <section id="contactanos" class="contact">
+     <div class="container">
+      <form action="/suscripcion/" class="form-email">
+        <h3>CONTÁCTANOS</h3>
+        <!-- <input type="text" placeholder="Dejame tu email" id="email">
+        <button>Enviar</button> -->
+        <h4>Showroom</h4>
+        Cto. San Felipe, MZ 2, Lote F <br>
+        Hacienda Galia <br>
+        San Pedro Totoltepec, Toluca
+        <div class="horario">
+          <h3>HORARIO</h3>
+        <strong>Horario de atencion:</strong> <br>
+        Lunes-Jueves: 09:00 Hrs.- 19:30 Hrs.<br>
+        Viernes.: 09:00 Hrs.- 19:00 Hrs.<br>
+        Sabados: 9:00 Hrs. - 13:00 Hrs.</p> 
+        </div>
+      </form>
+      <div class="social">
+        <h3>SÍGUENOS</h3>
+      <a href="https://web.facebook.com/pg/June-Renta-de-Vestidos-2187911771266217/photos/?ref=page_internal" class="social-link facebook"></a>
+      <a href="https://www.instagram.com/june_rentadevestidos/?hl=es-la" class="social-link instagram"></a>  
+      <div class="citas">
+        <h3>CITAS</h3>
+        <div class="citas-container">
+        <img src="images/whatsapp.svg" alt="whatsapp" height="50px">
+        <p>7222641475</p>
+      </div>
+      </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <p>
+            Designed  by  <a href="https://www.instagram.com/rodriguezdanielacevedo/">Daniel Acevedo</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const IPad = window.matchMedia("screen and (max-width: 767px)")
+      const menu = document.querySelector(".menu");
+      // console.log(menu);
+      const burguerButton = document.querySelector("#burger-menu");
+      // console.log(burguerButton);
+
+      IPad.addListener(validation)
+
+      function validation(event) {
+        if (event.matches) { 
+          burguerButton.addEventListener("click", hideShow)
+        } else {
+          burguerButton.removeEventListener("click", hideShow)
+        }
+      }
+      validation(IPad);
+      
+      function hideShow() {
+        if (menu.classList.contains("is-active")) {
+          menu.classList.remove("is-active");
+        } else{
+          menu.classList.add("is-active");
+        }
+      }
+    </script>
+  </body>
+</html>
