@@ -57,7 +57,7 @@ h1{
 }
 
 h2 {
-    color: #edb397;
+    color: darkgray;
     text-transform: uppercase;
     font-family:"Source Sans Pro", sans-serif;
     font-weight: bold;
@@ -232,7 +232,9 @@ font-size: 40px;
     font-family: inherit;
 }
 
-
+.form-email a{
+    color: white;
+}
 
 .form-email h3{
     font-family: "Source Sans Pro", sans-serif;

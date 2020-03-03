@@ -57,7 +57,7 @@ h1{
 }
 
 h2 {
-    color: #edb397;
+    color: darkgrey;
     text-transform: uppercase;
     font-family:"Source Sans Pro", sans-serif;
     font-weight: bold;
@@ -205,6 +205,9 @@ font-size: 40px;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+.form-email a{
+    color: white;
 }
 .social {
     height: 100%;
