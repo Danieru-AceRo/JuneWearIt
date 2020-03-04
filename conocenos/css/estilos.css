@@ -478,42 +478,26 @@ h1 {
         object-fit: cover;
         display: block;
       }
-      .mision-image2 {
+     .mision-image2 {
        width: 200px;
        height: auto;
        max-width: 100%;
        flex-wrap: wrap;
        object-fit: cover;
       }
-      .mision-image3 {
+     .mision-image3 {
        width: 200px;
        height: auto;
        max-width: 100%;
        flex-wrap: wrap;
        object-fit: contain;
       }
-    .mision-image {
-      width: 200px;
-      height: auto;
-      max-width: 100%;
-      flex-wrap: wrap;
-      object-fit: cover;
+    .conocenos-image {
+        max-width: 100%;
+        width: 75%;
+        object-fit: cover;
     }
-    .mision-image2 img{
-     width: 200px;
-     height: auto;
-     max-width: 100%;
-     flex-wrap: wrap;
-     object-fit: cover;
-    }
-    .mision-image3 img{
-     width: 200px;
-     height: auto;
-     max-width: 100%;
-     flex-wrap: wrap;
-     object-fit: contain;
-    }
-}        
+    } 
 
 @media screen and (max-width: 320px) {
     h1{
