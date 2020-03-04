@@ -490,7 +490,7 @@ h1 {
        height: auto;
        max-width: 100%;
        flex-wrap: wrap;
-       object-fit: contain;
+       object-fit: cover;
       }
     .conocenos-image {
         max-width: 100%;
