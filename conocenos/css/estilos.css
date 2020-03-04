@@ -471,17 +471,17 @@ h1 {
         font-size: 20px;
     }
     .mision-image img{
-      object-fit: contain;
+      object-fit: cover;
       width: 200px;
       height: auto;
     }
     .mision-image2 img{
-     object-fit: contain;
+     object-fit: cover;
      width: 200px;
      height: auto;
     }
     .mision-image3 img{
-     object-fit: contain;
+     object-fit: cover;
      width: 200px;
      height: auto;
     }
