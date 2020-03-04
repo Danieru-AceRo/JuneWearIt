@@ -470,12 +470,13 @@ h1 {
     .conocenos-description p{
         font-size: 20px;
     }
-    .mision-image img{
+    .mision-image {
         width: 200px;
         height: auto;
         max-width: 100%;
         flex-wrap: wrap;
         object-fit: cover;
+        display: block;
       }
       .mision-image2 {
        width: 200px;
