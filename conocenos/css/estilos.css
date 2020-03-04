@@ -472,6 +472,7 @@ h1 {
     }
     .event-imageConteiner{
         object-fit: cover;
+        max-width: 100%;
     }
     .mision-image img{
       width: 200px;
