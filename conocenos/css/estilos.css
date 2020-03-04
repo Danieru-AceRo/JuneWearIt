@@ -470,18 +470,18 @@ h1 {
     .conocenos-description p{
         font-size: 20px;
     }
+    .event-imageConteiner{
+        object-fit: cover;
+    }
     .mision-image img{
-      object-fit: cover;
       width: 200px;
       height: auto;
     }
     .mision-image2 img{
-     object-fit: cover;
      width: 200px;
      height: auto;
     }
     .mision-image3 img{
-     object-fit: cover;
      width: 200px;
      height: auto;
     }
