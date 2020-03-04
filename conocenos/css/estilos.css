@@ -474,16 +474,22 @@ h1 {
       width: 200px;
       height: auto;
       max-width: 100%;
+      flex-wrap: wrap;
+      object-fit: cover;
     }
     .mision-image2 img{
      width: 200px;
      height: auto;
      max-width: 100%;
+     flex-wrap: wrap;
+     object-fit: cover;
     }
     .mision-image3 img{
      width: 200px;
      height: auto;
      max-width: 100%;
+     flex-wrap: wrap;
+     object-fit: cover;
     }
 }        
 
