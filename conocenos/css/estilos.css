@@ -471,6 +471,27 @@ h1 {
         font-size: 20px;
     }
     .mision-image img{
+        width: 200px;
+        height: auto;
+        max-width: 100%;
+        flex-wrap: wrap;
+        object-fit: cover;
+      }
+      .mision-image2 {
+       width: 200px;
+       height: auto;
+       max-width: 100%;
+       flex-wrap: wrap;
+       object-fit: cover;
+      }
+      .mision-image3 {
+       width: 200px;
+       height: auto;
+       max-width: 100%;
+       flex-wrap: wrap;
+       object-fit: contain;
+      }
+    .mision-image {
       width: 200px;
       height: auto;
       max-width: 100%;
@@ -489,7 +510,7 @@ h1 {
      height: auto;
      max-width: 100%;
      flex-wrap: wrap;
-     object-fit: cover;
+     object-fit: contain;
     }
 }        
 
