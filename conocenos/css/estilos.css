@@ -470,6 +470,21 @@ h1 {
     .conocenos-description p{
         font-size: 20px;
     }
+    .mision-image img{
+      object-fit: contain;
+      width: 200px;
+      height: auto;
+    }
+    .mision-image2 img{
+     object-fit: contain;
+     width: 200px;
+     height: auto;
+    }
+    .mision-image3 img{
+     object-fit: contain;
+     width: 200px;
+     height: auto;
+    }
 }        
 
 @media screen and (max-width: 320px) {
@@ -485,4 +500,13 @@ h1 {
     .conocenos-title img{
         height: 36px;
     } 
+    .mision-image img{
+        width: 150px;
+      }
+      .mision-image2 img{
+       width: 150px;
+      }
+      .mision-image3 img{
+       width: 150px;
+      }
 }
