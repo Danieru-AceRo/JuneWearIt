@@ -472,11 +472,11 @@ h1 {
         padding-top: 29px;
     }
     .event{
-        width: 31%;
+        width: 98%;
         flex-shrink: initial;
     }
     .event img{
-        width: 100%;
+        width: 75%;
     }
     .promotion{
         width: 48%;
