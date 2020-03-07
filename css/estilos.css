@@ -472,11 +472,11 @@ h1 {
         padding-top: 29px;
     }
     .event{
-        width: 31%;
+        width: 98%;
         flex-shrink: initial;
     }
     .event img{
-        width: 100%;
+        width: 75%;
     }
     .promotion{
         width: 48%;
@@ -495,7 +495,16 @@ h1 {
         text-align: center;
         margin-right: 0;
     }
-}
+    .event-imageConteiner{
+     display: block;
+    }
+    .event-image{
+        max-width: 100%;
+        width: 100%;
+        object-fit: cover;
+        height: auto;
+    } 
+    }
 @media screen and (max-width: 480px) {
     .promotion h3{
         font-size: 24px;
