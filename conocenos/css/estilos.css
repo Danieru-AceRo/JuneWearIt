@@ -112,7 +112,7 @@ figure {
 }
 
 .nav-bar a{
-    color:#c22020;
+    color:#b947a1;
     text-decoration: none;  
     font-weight: bold;
     display: flex;
@@ -137,7 +137,7 @@ figure {
 
 .footer{
  color: white;
- background-color: black;
+ background-color: #ffccff;
  display: flex;
  align-items: center;
  justify-content: space-between;
@@ -154,7 +154,7 @@ figure {
 }
  
 .contact{
-    background-color:black;
+    background-color: #ffccff;
     color: white;
     height: auto;
     display: flex;
@@ -190,29 +190,10 @@ figure {
 .form-email a{
     color: white;
 }
-.form-email input{
-    border-color: gray;
-    border-style: solid;
-    border-radius: 5px;
-    padding: 10px 20px 10px 25px;
-    background-image: url("../images/envelope.svg");
-    background-size: 15px 15px;
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: 5px;
-}
 
-.form-email button{
-    display: block;
-    background: #2a2a2a;
-    color: white;
-    padding: 10px 0;
-    border-radius: 5px;
-    width: 100px;
-    margin-top: 10px;
-}
 .form-email h3{
     font-family: "Source Sans Pro", sans-serif;
+    margin-bottom: 5px;
 }
 
 .form-email h4{
@@ -295,7 +276,7 @@ margin-left: 18px;
 }
 
 .conocenos-mision{
-    width: 100%;
+    width: 66%;
 }
 .conocenos-mision p{
     font-size: 20px;
@@ -448,8 +429,8 @@ h1 {
         text-align: center;
         display: block;
     }
-    .form-email button{
-        margin:  1em auto;
+    .form-email{
+        margin-bottom: 1em;
     }
     .form-email h3{
         margin-top: 0;
