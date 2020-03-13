@@ -33,6 +33,7 @@
 body{
     font-family: "Source Sans Pro", sans-serif;
     margin: 0%;
+    background-color: white;
 }
 
 h1,
@@ -112,7 +113,7 @@ figure {
 }
 
 .nav-bar a{
-    color:#b947a1;
+    color:#c22020;
     text-decoration: none;  
     font-weight: bold;
     display: flex;
@@ -137,7 +138,7 @@ figure {
 
 .footer{
  color: white;
- background-color: #ffccff;
+ background-color: black;
  display: flex;
  align-items: center;
  justify-content: space-between;
@@ -163,7 +164,7 @@ font-weight: 100;
 
 .event {
   margin: 1%;
-  width: 31%;
+  width: 48%;
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
@@ -182,7 +183,7 @@ font-weight: 100;
     border-radius: 5px;
 } 
 .contact{
-    background-color: #ffccff;
+    background-color: black;
     color: white;
     height: auto;
     display: flex;
@@ -215,13 +216,30 @@ font-weight: 100;
     background-image: url("../images/instagram.svg");
 }
 
-.form-email a{
+.form-email input{
+    border-color: gray;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px 20px 10px 25px;
+    background-image: url("../images/envelope.svg");
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.form-email button{
+    display: block;
+    background: #2a2a2a;
     color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
 }
 
 .form-email h3{
     font-family: "Source Sans Pro", sans-serif;
-    margin-bottom: 5px;
 }
 
 .form-email h4{
@@ -290,6 +308,7 @@ margin-top: 33px;
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
+  align-self: center;
   /* background:ghostwhite; */
 }
 .promotion img {
@@ -310,11 +329,12 @@ margin-top: 33px;
 
 
 .promotion-url{
-    color: lightpink;
+    color: white;
     border: 1px solid ;
     padding: 5px 5px;
     text-decoration: none;
     border-radius: 5px;
+    background-color: crimson
 }
 .promotion p{
     margin: .5em;
@@ -322,11 +342,14 @@ margin-top: 33px;
 .promotion h3{
     margin: .5em;
 }
+.frase{
+    background-color: gray
+}
 .frase p{
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #d5a6bd;
+    color: white;
     font-family: "allura";
     font-size: 32px;
     margin-top: 50px;
@@ -522,8 +545,8 @@ h1 {
         text-align: center;
         display: block;
     }
-    .form-email{
-        margin-bottom: 1em;
+    .form-email button{
+        margin:  1em auto;
     }
     .form-email h3{
         margin-top: 0;

@@ -43,7 +43,6 @@ h5,
 h6{
     font-family: "Fjalla One", sans-serif;
     font-weight: normal;
-    /*font-style: italic*/
 }
 .logo{
     margin-top: auto;
@@ -54,36 +53,24 @@ h1{
     letter-spacing: -.2px;
     color: white;
     margin: 0px;
- 
+
 }
 
 h2 {
-    color:darkgray;
+    color: darkgrey;
+    text-transform: uppercase;
     font-family:"Source Sans Pro", sans-serif;
     font-weight: bold;
-    font-size: 48px;
+    font-size: 36px;
     margin-bottom: 40px;
     margin-top: 0%;
     display: flex;
     justify-content: center;
 }
-
 h3{
     font-size: 32px;
 }
-.hero-image{
-    object-fit: cover;
-    flex-wrap: wrap;
-}
-.principal-image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-    flex-wrap: wrap;
-}
 
-    
 
 .header{
     background-color: white;
@@ -107,8 +94,8 @@ ul {
 figure {
     margin: 0;
     text-align: center;
+    align-items: center;
     display: flex;
-    justify-content: center;
 }
 
 .nav-bar a{
@@ -122,8 +109,26 @@ figure {
     font-size: 19px;
     font-weight: 100;
 }
+.header a{
+    color:black;
+    text-decoration: none;  
+    font-weight: bold;
+}
 .menu {
     height: inherit;
+}
+.header ol {
+    display: flex;
+    height: inherit;
+}
+.header ol li{
+    height: inherit;
+}
+.header a {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
 }
 .nav-bar ol {
     display: flex;
@@ -144,7 +149,6 @@ figure {
  flex-wrap: wrap;
 }
 
-
 .footer img {
     vertical-align: middle;
 }
@@ -152,9 +156,51 @@ figure {
 .footer a{
     color: white
 }
- 
+.event-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+ .event-list-title{
+padding-top: 25px;
+margin-bottom: -10px;
+border-bottom: solid #f3f3f3 2px;
+font-size: 40px;
+}
+.event {
+  margin: 1%;
+  width: 23%;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  
+}
+.event img {
+    height: 400px;
+    object-fit: contain;
+    overflow: hidden;
+}
+.event-detail{
+    margin: 20px 40px;
+    margin-top: -40px;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+.event-descrption{
+    text-align: center;
+}
+
+.event-url{
+    color: white;
+    border: 1px solid ;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: crimson;
+
+}
 .contact{
-    background-color:black;
+    background-color: black;
     color: white;
     height: auto;
     display: flex;
@@ -162,15 +208,14 @@ figure {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
-.social{
+.form-email a{
+    color: white;
+}
+.social {
     height: 100%;
     margin-bottom: auto;
 }
-.social h3{
-    font-weight: normal;
-    font-family: inherit;
-}
+
 .social-link{
     display: inline-block;
     width: 50px;
@@ -187,9 +232,11 @@ figure {
     background-image: url("../images/instagram.svg");
 }
 
-.form-email a{
-    color: white;
+.social h3{
+    font-weight: normal;
+    font-family: inherit;
 }
+
 .form-email input{
     border-color: gray;
     border-style: solid;
@@ -211,19 +258,39 @@ figure {
     width: 100px;
     margin-top: 10px;
 }
+
 .form-email h3{
     font-family: "Source Sans Pro", sans-serif;
 }
 
 .form-email h4{
-font-size: 40px;
-font-family: "allura";
-margin: auto;
-}
-
-.form-email p{
-    font-size: 18px;
-}
+    font-size: 40px;
+    font-family: "allura";
+    margin: auto;
+    }
+    
+ .form-email p{
+   font-size: 18px;
+    }
+    .frase{
+        background-color: gray
+    }
+    .frase p{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        font-family: "allura";
+        font-size: 32px;
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+    .frase-small p{
+    margin:0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px; 
+    }
+    
 .container{
      /* border: 1px solid red; */
     max-width: 1000px;
@@ -249,13 +316,36 @@ margin: auto;
 }
 
 
+.event-title a{
+    color: black;
+    text-decoration: none
+}
+
+#june  {
+    height: 400px;
+    object-fit: contain;
+    flex-wrap: wrap;
+}
+
+.container-stock{
+    /* border: 1px solid red; */
+   /* max-width: 1000px; */
+   flex: 1;
+   margin: 0 ;
+   display: inherit;
+   justify-content: inherit;
+   align-items: inherit;
+   height: inherit;
+   flex-wrap: inherit;
+}
 .citas p{
-font-size: 23px;
-margin-left: 18px;
-}
-.citas-container{
-    display: flex;
-}
+    font-size: 23px;
+    margin-left: 18px;
+    }
+    .citas-container{
+        display: flex;
+    }
+
 .burger-button{
     width: 40px;
     height: 40px;
@@ -270,129 +360,55 @@ margin-left: 18px;
     top: 5px;
     color: white;
 }
-
-.conocenos-description p{
-    font-size: 28px;
-    text-align: justify;
-}
-
-.conocenos-description strong {
-    font-family: "allura";
-    font-weight: 100;
-}
-.container-conocenos{
-    /* border: 1px solid red; */
-   max-width: 1000px;
-   flex: 1;
-   margin: 0 auto;
-   display: flex;
-   justify-content: inherit;
-   align-items: inherit;
-   height: inherit;
-   flex-wrap: inherit;
-   margin-top: 50px;
-   
-}
-
-.conocenos-mision{
-    width: 100%;
-}
-.conocenos-mision p{
-    font-size: 20px;
-    text-align: justify;
-}
-.conocenos-mision h3{
-    color: gray;
-}
-.mision-image{
-    width: 33%;
-    justify-content: flex-end;
-}
-.mision-image2{
-    width: 33%;
-    justify-content: flex-start;
-    margin-bottom: 100px;
-}
-.razones{
-    margin-bottom: 60px;
-}
-.razones h3{
-    color: gray;
-}
-.razones li{
-    font-size: 20px;
-    list-style: disc;
-    text-align: justify;
-}
-.mision-image3{
-    width: 33%;
-    justify-content: flex-start;
-    margin-bottom: 100px;
-    display: none;
-}
 @media screen and (max-width: 1023px) {
-  
+.event-list-title{
+    margin-left: 0;
+}    
+.event-detail{
+    margin: 0%;
+    margin-top: -80px
+}
+.event-url{
+    font-size: 13px;
+}
 
 .container {
-    padding: 0 3em;
+    padding: 0 1em;
+}
+.container-stock{
+    padding: 0 1em; 
 }
 
-.principal-image{
-    padding: 30px;
-}
-.hero-image {
-   height:auto ;
-   max-width: 100%;
-}
 h1 {
     font-size: 2em;
     z-index: 2;
 }
-.container-conocenos {
-    padding: 0 1em;
-}
-.conocenos-mision {
-    margin: 0 15px;
-}
-.mision-image2{
-    margin-bottom: 10px;
-}
-}
 
 
+.burger-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .7);
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index: 4;
+    left: 5px;
+    top: 5px;
+    color: white;
+}
+}
 @media screen and (max-width: 767px) {
     h2{
-        margin: 0;
-        margin-bottom: .3em;
+        font-size: 1.2em;
+        margin: .5em 0;
     }
     .burger-button{
         display: block;
     }
-    .header{
-        display: block;
-       height: auto;
-    }   
-    .logo img{
-     height: 130px;
-     }
-    .nav-bar ol {
-        display: block;
-    }
-    .nav-bar ol li{
-        height: 50px;
-    }
-    .nav-bar a{
-        height: 40px;
-        font-size: 1.5em;
-        text-decoration: none;
-        margin-bottom: .5em;
-        border-bottom: solid 1px #2b2329;
-        color:#dcdcdc;
-        padding: 0 20px;
-    }
-    .header .logo{
-         text-align: center;
-    }
+    
     .menu{
         position: fixed;
         background: rgba(32, 28, 29,.9);
@@ -412,42 +428,54 @@ h1 {
         align-items: baseline;
         padding-top: 29px;
     }
-    .container-conocenos{
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    .logo img{
+        height: 130px;
+        }
+    .event{
+        width: 48%;
+        flex-shrink: initial;
+    }
+    .event img{
+        width: 100%;
+    }
+    .event-detail{
+        margin-top: -30px
     }
 
-    .conocenos-mision {
-        width: 100%
+    .nav-bar ol {
+        display: block;
     }
-    .mision-image{
-        width: 100%;
-        justify-content: center;
+    .nav-bar ol li{
+        height: 50px;
     }
-    .mision-image2{
-        width: 100%;
-        justify-content: center;
-        display: none;
-    }
-    .mision-image3{
-        margin-bottom: 10px;
-        width: 100%;
-        justify-content: center;
-        display: flex;
-    }
+    .nav-bar a{
+        height: 40px;
+        font-size: 1.5em;
+        text-decoration: none;
+        margin-bottom: .5em;
+        border-bottom: solid 1px #2b2329;
+        color:#dcdcdc;
+        padding: 0 20px;
+
 }
 @media screen and (max-width: 480px) {
     h1{
         font-size: 1.5em;
     }
-
+    
+     .event-detail{
+      margin: -2em .5em .5em;
+      padding: 1em;
+    }
     .contact{
         height: auto;
         padding: 1.5em 0;
         text-align: center;
         display: block;
     }
+    .logo img{
+        height: 90px;
+        }
     .form-email button{
         margin:  1em auto;
     }
@@ -464,81 +492,55 @@ h1 {
         height: 40px;
         background-size: 100%;
     }
-  
+    .event-url{
+        font-size: 12px
+    }
+    .event img{
+        height: auto;
+    }
+    .event-detail{
+        margin: 0%;
+    }
+    .event-title{
+        font-size: 22px;
+    }
     .header{
-          padding: 10px 0;
-      }
-     .principal-image{
-          padding: 15px;
-      }
+        padding: 10px 0;
+    }
     .nav-bar a{
         font-size: 1em;
     }
-    .logo img{
-        height: 90px;
-        }
-  .citas-container {
+    .event-list-title{
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    .citas-container {
         justify-content: center;
-        }    
-    .conocenos-title h2{
-        font-size: 48px;
-    } 
-    .conocenos-title img{
-        height: 48px;
-    } 
-    .conocenos-description p{
-        font-size: 20px;
-    }
-    .mision-image {
-        width: 200px;
-        height: auto;
-        max-width: 100%;
-        flex-wrap: wrap;
-        object-fit: cover;
-        display: block;
-      }
-     .mision-image2 {
-       width: 200px;
-       height: auto;
-       max-width: 100%;
-       flex-wrap: wrap;
-       object-fit: cover;
-      }
-     .mision-image3 {
-       width: 200px;
-       height: auto;
-       max-width: 100%;
-       flex-wrap: wrap;
-       object-fit: cover;
-       display: block;
-      }
-    .conocenos-image {
-        max-width: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-    } 
+    }     
+}
 
 @media screen and (max-width: 320px) {
     h1{
         font-size: 1.2;
         } 
-    .logo img
-    {height: 60px;
+    .event-url{
+        font-size: 7px
     }
-    .conocenos-title h2{
-        font-size: 36px;
-    } 
-    .conocenos-title img{
-        height: 36px;
-    } 
-    .mision-image img{
-        width: 150px;
-      }
-      .mision-image2 img{
-       width: 150px;
-      }
-      .mision-image3 img{
-       width: 150px;
-      }
+    .event-detail{
+        padding: .5em;
+    }
+    .logo img {
+        height: 60px;
+    }
+
+    .event-list-title{
+        font-size: 28px;
+        padding: 0%;
+    }
+    .promotion-descrption{
+        font-size: 12px;
+    }
+    .event-title{
+        font-size: 18px
+    }
 }
