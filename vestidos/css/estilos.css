@@ -138,7 +138,54 @@ figure {
 .nav-bar ol li{
     height: inherit;
 }
+.talla{
+    display: flex;
+    justify-content: center;
+    color: darkgray;
+    margin-top: 30px;
+}
 
+.tallas{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.tallas li {
+    width: 10%;
+}
+.tallas li a {
+    color: darkgray;  
+    font-weight: bold;
+    font-size: 16px;
+    font-weight: 100;  
+}
+
+.vestido-talla {
+    display: flex;
+    justify-content: center;
+    color: lightpink;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+.right1,.right2,.right3,.right4
+,.right5,.right6,.right7,.right8
+,.right9,.right10,.right11,.right12
+,.right13,.right14,.right15{
+    position: absolute;
+    right:5%;
+    top: 50%;
+}
+
+.left1,.left2,.left3,.left4
+,.left5,.left6,.left7,.left8
+,.left9,.left10,.left11,.left12
+,.left13,.left14,.left15{
+    position: absolute;
+    left: 5%;
+    top: 50%;
+}
 
 .footer{
  color: white;
@@ -174,6 +221,10 @@ font-size: 40px;
   overflow: hidden;
   
 }
+.event-imageConteiner{
+    position: relative;
+    display: block;
+}
 .event img {
     height: 400px;
     object-fit: contain;
@@ -187,15 +238,21 @@ font-size: 40px;
 }
 .event-descrption{
     text-align: center;
+    font-size: 24px;
+    color: darkgrey;
+}
+.precio-producto{
+    font-size: 22px;
+    color: lightpink;
 }
 
 .event-url{
-    color: lightpink;
+    color: white;
     border: 1px solid ;
     padding: 5px 20px;
     text-decoration: none;
     border-radius: 5px;
-
+    background-color: #ffccff;
 }
 .contact{
     background-color: #ffccff;
@@ -322,12 +379,15 @@ font-size: 40px;
     color: white;
 }
 @media screen and (max-width: 1023px) {
+.event{
+    width: 31%;
+    margin: 3% 1% ;
+}
 .event-list-title{
     margin-left: 0;
 }    
 .event-detail{
     margin: 0%;
-    margin-top: -80px
 }
 .event-url{
     font-size: 13px;
@@ -450,6 +510,9 @@ h1 {
         height: 40px;
         background-size: 100%;
     }
+    .event{
+        margin: 20% 1%;
+    }
     .event-url{
         font-size: 12px
     }
@@ -471,6 +534,10 @@ h1 {
     .event-list-title{
         margin-top: 15px;
         margin-bottom: 20px;
+        font-size: 28px;
+    }
+    .talla{
+        font-size: 24px;
     }
     .citas-container {
         justify-content: center;
