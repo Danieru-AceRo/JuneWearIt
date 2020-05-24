@@ -75,6 +75,9 @@ h3{
     object-fit: cover;
     flex-wrap: wrap;
 }
+.principal-container{
+    padding-top: 25px;
+}
 .principal-image{
     display: flex;
     justify-content: center;
@@ -205,7 +208,7 @@ font-weight: 100;
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
-  background:#fdfdfd;
+  background:#ffffff;
   position: relative;
 }
 .event img {

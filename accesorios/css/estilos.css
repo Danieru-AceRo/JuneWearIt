@@ -159,6 +159,7 @@ figure {
 .event-list{
     display: flex;
     flex-wrap: wrap;
+    padding-top: 50px;;
 }
  .event-list-title{
 padding-top: 25px;
@@ -175,7 +176,7 @@ font-size: 40px;
   
 }
 .event img {
-    height: 400px;
+    max-height: 240px;
     object-fit: contain;
 }
 .event-detail{
@@ -429,6 +430,9 @@ h1 {
       margin: -2em .5em .5em;
       padding: 1em;
     }
+    .event-list-title{
+        font-size: 28px;
+    }
     .contact{
         height: auto;
         padding: 1.5em 0;
@@ -455,7 +459,7 @@ h1 {
         font-size: 12px
     }
     .event img{
-        height: auto;
+        max-height: 150px;
     }
     .event-detail{
         margin: 0%;

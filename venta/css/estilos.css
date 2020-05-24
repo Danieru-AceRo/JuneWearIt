@@ -470,6 +470,7 @@ h1 {
     .event-list-title{
         margin-top: 15px;
         margin-bottom: 20px;
+        font-size: 28px;
     }
     .citas-container {
         justify-content: center;
@@ -494,4 +495,5 @@ h1 {
         font-size: 28px;
         padding: 0%;
     }
+}
 }
